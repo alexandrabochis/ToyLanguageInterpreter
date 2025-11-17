@@ -1,0 +1,126 @@
+ProgramState: 
+~ exeStack= [(string varf (varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))))]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))), open(varf)]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@4f3f5b24}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf varc (print(varc) (varf varc (print(varc) closed(varf))))), int varc]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@4f3f5b24}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf varc (print(varc) (varf varc (print(varc) closed(varf)))))]
+~ symTable= {varf=test.in, varc=0}
+~ fileTable= {test.in=java.io.BufferedReader@4f3f5b24}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf)))), varf varc]
+~ symTable= {varf=test.in, varc=0}
+~ fileTable= {test.in=java.io.BufferedReader@4f3f5b24}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@4f3f5b24}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf varc (print(varc) closed(varf))), print(varc)]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@4f3f5b24}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf varc (print(varc) closed(varf)))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@4f3f5b24}
+~ out= [15]
+
+
+ProgramState: 
+~ exeStack= [(print(varc) closed(varf)), varf varc]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@4f3f5b24}
+~ out= [15]
+
+
+ProgramState: 
+~ exeStack= [(print(varc) closed(varf))]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@4f3f5b24}
+~ out= [15]
+
+
+ProgramState: 
+~ exeStack= [closed(varf), print(varc)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@4f3f5b24}
+~ out= [15]
+
+
+ProgramState: 
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@4f3f5b24}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {}
+~ out= [15, 50]
+
+

@@ -1,0 +1,312 @@
+ProgramState: 
+~ exeStack= [(int a (int b (a=2+3*5 (b=a+1 print(b)))))]
+~ symTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int b (a=2+3*5 (b=a+1 print(b)))), int a]
+~ symTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int b (a=2+3*5 (b=a+1 print(b))))]
+~ symTable= {a=0}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=2+3*5 (b=a+1 print(b))), int b]
+~ symTable= {a=0}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=2+3*5 (b=a+1 print(b)))]
+~ symTable= {a=0, b=0}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(b=a+1 print(b)), a=2+3*5]
+~ symTable= {a=0, b=0}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(b=a+1 print(b))]
+~ symTable= {a=17, b=0}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(b), b=a+1]
+~ symTable= {a=17, b=0}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(b)]
+~ symTable= {a=17, b=18}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {a=17, b=18}
+~ out= [18]
+
+
+ProgramState: 
+~ exeStack= [(int v (v=2 print(v)))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v)), int v]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v))]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v), v=2]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v)]
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= [2]
+
+
+ProgramState: 
+~ exeStack= [(int v (v=2 print(v)))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v)), int v]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v))]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v), v=2]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v)]
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= [2]
+
+
+ProgramState: 
+~ exeStack= [(int v (v=2 print(v)))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v)), int v]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v))]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v), v=2]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v)]
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= [2]
+
+
+ProgramState: 
+~ exeStack= [(int v (v=2 print(v)))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v)), int v]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v))]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v), v=2]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v)]
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= [2]
+
+
+ProgramState: 
+~ exeStack= [(int v (v=2 print(v)))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v)), int v]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v))]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v), v=2]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v)]
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= [2]
+
+
+ProgramState: 
+~ exeStack= [(int v (v=2 print(v)))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v)), int v]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v))]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v), v=2]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v)]
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= [2]
+
+

@@ -1,0 +1,136 @@
+ProgramState: 
+~ exeStack= [(bool a (int v (a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v)))))]
+~ symTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int v (a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v)))), bool a]
+~ symTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int v (a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v))))]
+~ symTable= {a=false}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v))), int v]
+~ symTable= {a=false}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v)))]
+~ symTable= {a=false, v=0}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v)), a=true]
+~ symTable= {a=false, v=0}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v))]
+~ symTable= {a=true, v=0}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v), (IF(a) THEN(v=2) ELSE(v=3))]
+~ symTable= {a=true, v=0}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v), v=2]
+~ symTable= {a=true, v=0}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v)]
+~ symTable= {a=true, v=2}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {a=true, v=2}
+~ out= [2]
+
+
+ProgramState: 
+~ exeStack= [(int a (int b (a=2+3*5 (b=a+1 print(b)))))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int b (a=2+3*5 (b=a+1 print(b)))), int a]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int b (a=2+3*5 (b=a+1 print(b))))]
+~ symTable= {a=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=2+3*5 (b=a+1 print(b))), int b]
+~ symTable= {a=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=2+3*5 (b=a+1 print(b)))]
+~ symTable= {a=0, b=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(b=a+1 print(b)), a=2+3*5]
+~ symTable= {a=0, b=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(b=a+1 print(b))]
+~ symTable= {a=17, b=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(b), b=a+1]
+~ symTable= {a=17, b=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(b)]
+~ symTable= {a=17, b=18}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {a=17, b=18}
+~ fileTable= {}
+~ out= [18]
+
+

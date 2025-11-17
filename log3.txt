@@ -1,0 +1,455 @@
+ProgramState: 
+~ exeStack= [(string varf (varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))))]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))), open(varf)]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(string varf (varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))))]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))), open(varf)]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(string varf (varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))))]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))), open(varf)]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(string varf (varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))))]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))), open(varf)]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(string varf (varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))))]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))), open(varf)]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(string varf (varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))))]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))), open(varf)]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(string varf (varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))))]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))), open(varf)]
+~ symTable= {varf=test.in}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@2d98a335}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf varc (print(varc) (varf varc (print(varc) closed(varf))))), int varc]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@2d98a335}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf varc (print(varc) (varf varc (print(varc) closed(varf)))))]
+~ symTable= {varf=test.in, varc=0}
+~ fileTable= {test.in=java.io.BufferedReader@2d98a335}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf)))), varf varc]
+~ symTable= {varf=test.in, varc=0}
+~ fileTable= {test.in=java.io.BufferedReader@2d98a335}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@2d98a335}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf varc (print(varc) closed(varf))), print(varc)]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@2d98a335}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(varf varc (print(varc) closed(varf)))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@2d98a335}
+~ out= [15]
+
+
+ProgramState: 
+~ exeStack= [(print(varc) closed(varf)), varf varc]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@2d98a335}
+~ out= [15]
+
+
+ProgramState: 
+~ exeStack= [(print(varc) closed(varf))]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@2d98a335}
+~ out= [15]
+
+
+ProgramState: 
+~ exeStack= [closed(varf), print(varc)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@2d98a335}
+~ out= [15]
+
+
+ProgramState: 
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@2d98a335}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ exeStack= [(bool a (int v (a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v)))))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int v (a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v)))), bool a]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int v (a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v))))]
+~ symTable= {a=false}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v))), int v]
+~ symTable= {a=false}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v)))]
+~ symTable= {a=false, v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v)), a=true]
+~ symTable= {a=false, v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v))]
+~ symTable= {a=true, v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v), (IF(a) THEN(v=2) ELSE(v=3))]
+~ symTable= {a=true, v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v), v=2]
+~ symTable= {a=true, v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v)]
+~ symTable= {a=true, v=2}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {a=true, v=2}
+~ fileTable= {}
+~ out= [2]
+
+
