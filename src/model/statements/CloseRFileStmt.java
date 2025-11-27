@@ -33,7 +33,7 @@ public class CloseRFileStmt implements IStmt{
         MyIDictionary<StringValue, BufferedReader> fileTable = state.getFileTable();
 
 
-        Value val = exp.eval(symtbl);
+        Value val = exp.eval(symtbl,  state.getHeap());
         if(val.getType().equals(new StringType())) {
 
             StringValue strVal = (StringValue) val;

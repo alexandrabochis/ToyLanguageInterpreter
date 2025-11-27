@@ -68,6 +68,11 @@ public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
     }
 
     @Override
+    public Map<T1, T2> getDictionary() {
+        return map;
+    }
+
+    @Override
     public String toString(){
         return this.map.toString();
     }

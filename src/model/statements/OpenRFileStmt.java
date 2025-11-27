@@ -25,7 +25,7 @@ public class OpenRFileStmt implements IStmt {
         MyIDictionary<String, Value> symTable = state.getSymTable();
         MyIDictionary<StringValue, BufferedReader> fileTable = state.getFileTable();
 
-        Value val = exp.eval(symTable);
+        Value val = exp.eval(symTable, state.getHeap());
         if(val.getType().equals(new StringType())){
             StringValue strVal = (StringValue) val;
             if(fileTable.isDefined(strVal))

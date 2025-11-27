@@ -4,7 +4,12 @@ import exceptions.GeneralException;
 import model.PrgState;
 import model.adt.MyIStack;
 import model.statements.IStmt;
+import model.values.RefValue;
+import model.values.Value;
 import repository.IRepository;
+
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Controller {
     private IRepository repository;
@@ -33,6 +38,46 @@ public class Controller {
         }
     }
 
+    public Map<Integer, Value> safeGarbageCollector(List<Integer> symTableAddr, Map<Integer,Value> heap){
+        Set<Integer> reacheableAddr = new HashSet<>(symTableAddr);
+
+        boolean changed = false;
+        do{
+            changed = false;
+            List<Integer> currentReachable = new ArrayList<>(reacheableAddr);
+
+            for (Integer addr : currentReachable){
+                if(heap.containsKey(addr)){
+                    Value value = heap.get(addr);
+                    if(value instanceof RefValue){
+                        RefValue ref = (RefValue)value;
+                        int refAddr = ref.getAddr();
+                        if(!reacheableAddr.contains(refAddr)){
+                            reacheableAddr.add(refAddr);
+                            changed = true;
+                        }
+                    }
+                }
+            }
+        }while(changed);
+
+        return heap.entrySet().stream()
+                        .filter(e->reacheableAddr.contains(e.getKey()))
+                        .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+    }
+
+    public Map<Integer, Value> unsafeGarbageCollector(List<Integer> symTableAddr, Map<Integer,Value> heap){
+        return heap.entrySet().stream()
+                        .filter(e->symTableAddr.contains(e.getKey()))
+                        .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+    }
+    List<Integer> getAddrFromSymTable(Collection<Value> symTableValues){
+        return symTableValues.stream()
+                .filter(v-> v instanceof RefValue)
+                .map(v-> {RefValue v1 = (RefValue)v; return v1.getAddr();})
+                .collect(Collectors.toList());
+    }
+
     public void allSteps() throws Exception {
         PrgState program = repository.getCurrentPrgState();
         repository.logPrgStateExec(program);
@@ -50,6 +95,10 @@ public class Controller {
             }
             if(this.displayFlag)
                 System.out.println(displayState(program));
+            repository.logPrgStateExec(program);
+            program.getHeap().setHeap((HashMap<Integer, Value>) safeGarbageCollector(
+                    getAddrFromSymTable(program.getSymTable().getDictionary().values()),
+                    program.getHeap().getHeap()));
             repository.logPrgStateExec(program);
         }
         if(!this.displayFlag){

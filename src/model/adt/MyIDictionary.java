@@ -3,6 +3,7 @@ package model.adt;
 import exceptions.ADTException;
 
 import java.util.Collection;
+import java.util.Map;
 
 public interface MyIDictionary <T1,T2>{
     void add(T1 key, T2 value)throws ADTException;
@@ -12,4 +13,6 @@ public interface MyIDictionary <T1,T2>{
     boolean isEmpty();
     boolean isDefined(T1 key);
     Collection<T2> values();
+
+    Map<T1,T2> getDictionary();
 }

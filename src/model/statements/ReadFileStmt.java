@@ -40,7 +40,7 @@ public class ReadFileStmt implements IStmt {
         if(!val.getType().equals(new IntType()))
             throw new StatementException("Variable " + varName + " is not of type int");
 
-        Value valExp = exp.eval(symtbl);
+        Value valExp = exp.eval(symtbl, state.getHeap());
         if(!valExp.getType().equals(new StringType()))
             throw new StatementException("Variable " + exp + " is not of type String");
 

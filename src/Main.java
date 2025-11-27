@@ -2,6 +2,7 @@ import controller.Controller;
 import exceptions.FileException;
 import model.PrgState;
 import model.adt.MyDictionary;
+import model.adt.MyHeap;
 import model.adt.MyList;
 import model.adt.MyStack;
 import model.statements.IStmt;
@@ -43,6 +44,35 @@ public class Main {
             repo4.addPrgState(prg4);
             Controller controller4 = new Controller(repo4);
 
+            String filePath5 = "log5.txt";
+            IRepository repo5 = new Repository(filePath5);
+            PrgState prg5 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[4], new MyDictionary<>(), new MyHeap<>());
+            repo5.addPrgState(prg5);
+            Controller controller5 = new Controller(repo5);
+
+            String filePath6 = "log6.txt";
+            IRepository repo6 = new Repository(filePath6);
+            PrgState prg6 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[5], new MyDictionary<>(), new MyHeap<>());
+            repo6.addPrgState(prg6);
+            Controller controller6 = new Controller(repo6);
+
+            String filePath7 = "log7.txt";
+            IRepository repo7 = new Repository(filePath7);
+            PrgState prg7 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[6], new MyDictionary<>(), new MyHeap<>());
+            repo7.addPrgState(prg7);
+            Controller controller7 = new Controller(repo7);
+
+            String filePath8 = "log8.txt";
+            IRepository repo8 = new Repository(filePath8);
+            PrgState prg8 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[7], new MyDictionary<>(), new MyHeap<>());
+            repo8.addPrgState(prg8);
+            Controller controller8 = new Controller(repo8);
+
+            String filePath9 = "log9.txt";
+            IRepository repo9 = new Repository(filePath9);
+            PrgState prg9 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[8], new MyDictionary<>(), new MyHeap<>());
+            repo9.addPrgState(prg9);
+            Controller controller9 = new Controller(repo9);
 
             TextMenu menu = new TextMenu();
             menu.addCommand(new ExitCommand("0", "exit"));
@@ -50,6 +80,11 @@ public class Main {
             menu.addCommand(new RunExample("2",ex[1].toString(), controller2));
             menu.addCommand(new RunExample("3",ex[2].toString(), controller3));
             menu.addCommand(new RunExample("4",ex[3].toString(), controller4));
+            menu.addCommand(new RunExample("5",ex[4].toString(), controller5));
+            menu.addCommand(new RunExample("6",ex[5].toString(), controller6));
+            menu.addCommand(new RunExample("7",ex[6].toString(), controller7));
+            menu.addCommand(new RunExample("8",ex[7].toString(), controller8));
+            menu.addCommand(new RunExample("9",ex[8].toString(), controller9));
 
             menu.show();
         }

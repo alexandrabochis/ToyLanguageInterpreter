@@ -4,6 +4,7 @@ import exceptions.ADTException;
 import exceptions.ExpressionException;
 import exceptions.GeneralException;
 import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
 import model.types.BoolType;
 import model.types.IntType;
 import model.values.BoolValue;
@@ -24,11 +25,11 @@ public class LogicExp implements  Expression {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> table) throws GeneralException {
+    public Value eval(MyIDictionary<String, Value> table, MyIHeap<Value> heap) throws GeneralException {
         Value v1, v2;
-        v1 = e1.eval(table);
+        v1 = e1.eval(table, heap);
         if(v1.getType().equals(new BoolType())) {
-            v2 = e2.eval(table);
+            v2 = e2.eval(table, heap);
             if(v2.getType().equals(new BoolType())) {
                 BoolValue i1 = (BoolValue)v1;
                 BoolValue i2 = (BoolValue)v2;

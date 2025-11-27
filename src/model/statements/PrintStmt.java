@@ -22,7 +22,7 @@ public class PrintStmt implements IStmt{
 
     public PrgState execute(PrgState state) throws GeneralException {
         MyIList<Value> out = state.getOut();
-        out.add(exp.eval(state.getSymTable()));
+        out.add(exp.eval(state.getSymTable(), state.getHeap()));
         state.setOut(out);
         return state;
     }

@@ -310,3 +310,45 @@ ProgramState:
 ~ out= [2]
 
 
+ProgramState: 
+~ exeStack= [(int v (v=2 print(v)))]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v)), int v]
+~ symTable= {}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(v=2 print(v))]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v), v=2]
+~ symTable= {v=0}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(v)]
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {v=2}
+~ fileTable= {}
+~ out= [2]
+
+

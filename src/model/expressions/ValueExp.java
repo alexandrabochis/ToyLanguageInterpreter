@@ -2,6 +2,7 @@ package model.expressions;
 
 import exceptions.ExpressionException;
 import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
 import model.values.Value;
 
 public class ValueExp implements Expression {
@@ -12,7 +13,7 @@ public class ValueExp implements Expression {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> table) throws ExpressionException {
+    public Value eval(MyIDictionary<String, Value> table, MyIHeap<Value> heap) throws ExpressionException {
         return expression;
     }
 

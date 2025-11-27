@@ -3,6 +3,7 @@ package model.expressions;
 import exceptions.ADTException;
 import exceptions.ExpressionException;
 import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
 import model.values.Value;
 
 public class VarExp implements Expression {
@@ -18,7 +19,7 @@ public class VarExp implements Expression {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> table) throws ADTException {
+    public Value eval(MyIDictionary<String, Value> table, MyIHeap<Value> heap) throws ADTException {
         return table.search(this.id);
     }
 }
