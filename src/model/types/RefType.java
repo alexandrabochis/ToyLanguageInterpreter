@@ -21,6 +21,11 @@ public class RefType implements Type {
     }
 
     @Override
+    public Type deepCopy() {
+        return new  RefType(this.inner);
+    }
+
+    @Override
     public String toString() {
         return "Ref("+inner.toString()+")";
     }

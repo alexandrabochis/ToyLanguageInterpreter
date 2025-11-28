@@ -8,7 +8,6 @@ import model.types.RefType;
 import model.types.StringType;
 import model.values.BoolValue;
 import model.values.IntValue;
-import model.values.RefValue;
 import model.values.StringValue;
 
 public class Examples {

@@ -53,4 +53,9 @@ public class RelExp implements Expression {
         }else throw new ExpressionException("first operand is not int");
     }
 
+    @Override
+    public Expression deepCopy() {
+        return new RelExp(this.exp1, this.exp2, this.op);
+    }
+
 }

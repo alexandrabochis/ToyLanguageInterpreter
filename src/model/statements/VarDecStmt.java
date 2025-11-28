@@ -30,6 +30,11 @@ public class VarDecStmt implements IStmt {
     }
 
     @Override
+    public IStmt deepCopy() {
+        return new  VarDecStmt(name, type);
+    }
+
+    @Override
     public String toString(){
         return type.toString() + " " + name;
     }

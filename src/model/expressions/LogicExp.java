@@ -48,10 +48,16 @@ public class LogicExp implements  Expression {
         }
         else throw new ExpressionException("1st not boolean");
     }
+
+    @Override
+    public Expression deepCopy() {
+        return new LogicExp(this.e1, this.e2, this.op);
+    }
+
     @Override
     public String toString(){
         return switch (op){
-            case 1 -> e1.toString()+ "&"+e2.toString();
+            case 1 -> e1.toString()+ "& "+e2.toString();
             case 2 -> e1.toString()+ "| "+e2.toString();
             default -> "";
         };

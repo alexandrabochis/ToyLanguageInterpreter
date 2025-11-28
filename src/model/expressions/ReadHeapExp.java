@@ -29,6 +29,11 @@ public class ReadHeapExp implements Expression {
         return heap.get(addr);
     }
 
+    @Override
+    public Expression deepCopy() {
+        return new ReadHeapExp(this.exp);
+    }
+
     public String toString(){
         return "rH("+exp.toString()+")";
     }

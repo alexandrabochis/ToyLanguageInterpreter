@@ -42,6 +42,11 @@ public class HeapAllocStmt implements IStmt{
     }
 
     @Override
+    public IStmt deepCopy() {
+        return new HeapAllocStmt(this.name, this.exp);
+    }
+
+    @Override
     public String toString() {
         return "new("+this.name+","+this.exp+")";
     }

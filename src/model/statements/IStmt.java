@@ -8,5 +8,5 @@ import model.PrgState;
 
 public interface IStmt {
     PrgState execute(PrgState state) throws GeneralException; //todo exception
-
+    public IStmt deepCopy();
 }

@@ -55,4 +55,9 @@ public class CloseRFileStmt implements IStmt{
         return state;
     }
 
+    @Override
+    public IStmt deepCopy() {
+        return new  CloseRFileStmt(exp);
+    }
+
 }

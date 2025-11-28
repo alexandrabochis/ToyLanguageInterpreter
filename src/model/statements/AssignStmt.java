@@ -43,6 +43,11 @@ public class AssignStmt implements IStmt{
     }
 
     @Override
+    public IStmt deepCopy() {
+        return new  AssignStmt(id, expression);
+    }
+
+    @Override
     public String toString() {
         return id + "=" + expression.toString();
     }

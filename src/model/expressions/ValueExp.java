@@ -18,6 +18,11 @@ public class ValueExp implements Expression {
     }
 
     @Override
+    public Expression deepCopy() {
+        return new  ValueExp(expression);
+    }
+
+    @Override
     public String toString(){
         return expression.toString();
     }

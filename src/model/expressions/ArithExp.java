@@ -59,6 +59,19 @@ public class ArithExp implements Expression {
     }
 
     @Override
+    public Expression deepCopy() {
+        char newOp= ' ';
+        switch (op) {
+            case 1 -> newOp = '+';
+            case 2 -> newOp = '-';
+            case 3 ->  newOp= '*';
+            case 4 ->  newOp= '/';
+        }
+        return new ArithExp(newOp, e1, e2);
+
+    }
+
+    @Override
     public String toString() {
         return switch (op){
             case 1 -> e1.toString()+ "+" +e2.toString();
@@ -68,4 +81,6 @@ public class ArithExp implements Expression {
             default -> "";
         };
     }
+
+
 }

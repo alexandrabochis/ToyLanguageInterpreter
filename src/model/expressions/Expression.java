@@ -9,4 +9,5 @@ import model.values.Value;
 
 public interface Expression {
     Value eval(MyIDictionary<String, Value> table, MyIHeap<Value> heap) throws GeneralException;
+    public Expression deepCopy();
 }

@@ -22,4 +22,9 @@ public class VarExp implements Expression {
     public Value eval(MyIDictionary<String, Value> table, MyIHeap<Value> heap) throws ADTException {
         return table.search(this.id);
     }
+
+    @Override
+    public Expression deepCopy() {
+        return new VarExp(this.id);
+    }
 }

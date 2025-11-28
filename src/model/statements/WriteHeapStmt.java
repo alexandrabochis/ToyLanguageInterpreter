@@ -43,6 +43,12 @@ public class WriteHeapStmt implements IStmt{
         return state;
 
     }
+
+    @Override
+    public IStmt deepCopy() {
+        return new  WriteHeapStmt(name, expression);
+    }
+
     public String toString(){
         return "wH( "+this.name+", "+this.expression.toString()+")";
     }

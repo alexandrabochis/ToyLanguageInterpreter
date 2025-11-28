@@ -1,10 +1,10 @@
-package model.expressions;
+package model.statements;
 
 import exceptions.GeneralException;
 import exceptions.StatementException;
 import model.PrgState;
 import model.adt.MyIStack;
-import model.statements.IStmt;
+import model.expressions.Expression;
 import model.types.BoolType;
 import model.values.BoolValue;
 import model.values.Value;
@@ -32,6 +32,11 @@ public class WhileStmt implements IStmt {
         }
         state.setExeStack(stack);
         return state;
+    }
+
+    @Override
+    public IStmt deepCopy() {
+        return new  WhileStmt(expression,stmt);
     }
 
     public String toString() {

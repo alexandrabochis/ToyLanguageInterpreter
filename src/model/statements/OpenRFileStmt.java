@@ -46,6 +46,11 @@ public class OpenRFileStmt implements IStmt {
     }
 
     @Override
+    public IStmt deepCopy() {
+        return new OpenRFileStmt(exp);
+    }
+
+    @Override
     public String toString(){
         return "open(" + this.exp.toString() + ')';
     }

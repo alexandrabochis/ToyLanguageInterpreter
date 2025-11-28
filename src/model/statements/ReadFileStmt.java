@@ -64,4 +64,9 @@ public class ReadFileStmt implements IStmt {
         return state;
     }
 
+    @Override
+    public IStmt deepCopy() {
+        return new ReadFileStmt(exp, varName);
+    }
+
 }

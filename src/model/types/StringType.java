@@ -18,5 +18,10 @@ public class StringType implements Type {
     public Value getDefault() {
         return new StringValue("Default String");
     }
+
+    @Override
+    public Type deepCopy() {
+        return new StringType();
+    }
     //deepcopy
 }
