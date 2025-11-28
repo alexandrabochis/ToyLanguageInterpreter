@@ -36,8 +36,8 @@ public class HeapAllocStmt implements IStmt{
         int addr = heap.allocate(newVal);
         symTbl.update(this.name, new RefValue(addr, newVal.getType()));
 
-        state.setHeap(heap);
-        state.setSymTable(symTbl);
+        //state.setHeap(heap);
+        //state.setSymTable(symTbl);
         return state;
     }
 

@@ -14,42 +14,25 @@ public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
 
     @Override
     public void add(T1 key, T2 value) throws ADTException {
-        try{
-            this.map.put(key, value);
-        }
-        catch(Exception e){
-            throw new ADTException("Can't add value");
-        }
+        this.map.put(key, value);
     }
 
     @Override
     public T2 remove(T1 key) throws ADTException {
-        try{
-            return this.map.remove(key);
-        }
-        catch(Exception e){
-            throw new ADTException("Can't remove value");
-        }
+        return this.map.remove(key);
+
     }
 
     @Override
     public void update(T1 key, T2 value) throws ADTException {
-        try{
-            this.map.replace(key, value);
-        }
-        catch(Exception e){
-            throw new ADTException("Can't update value");
-        }
+        this.map.replace(key, value);
+
     }
 
     @Override
     public T2 search(T1 key) throws ADTException {
-        try{
-            return this.map.get(key);
-        }
-        catch(Exception e){
-            throw new ADTException("Can't search value");
-        }
+        return this.map.get(key);
+
     }
 
     @Override

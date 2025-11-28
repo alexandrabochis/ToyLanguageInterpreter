@@ -41,7 +41,7 @@ public class OpenRFileStmt implements IStmt {
             }
         }
 
-        state.setFileTable(fileTable);
+        //state.setFileTable(fileTable);
         return state;
     }
 

@@ -37,7 +37,7 @@ public class IfStmt implements IStmt {
                 stack.push(elseStmt);
         }
 
-        state.setExeStack(stack);
+        //state.setExeStack(stack);
         return state;
     }
 

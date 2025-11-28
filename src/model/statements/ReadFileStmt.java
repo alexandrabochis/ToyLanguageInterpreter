@@ -53,7 +53,7 @@ public class ReadFileStmt implements IStmt {
                 if(line == null) intVal = new IntValue(0);
                 else intVal = new IntValue(Integer.parseInt(line));
                 symtbl.update(varName, intVal);
-                state.setSymTable(symtbl);
+                //state.setSymTable(symtbl);
             }
             catch(Exception e){
                 throw new FileException(e.getMessage());

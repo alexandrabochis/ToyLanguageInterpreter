@@ -22,25 +22,25 @@ public class Main {
         try {
             String filePath1 = "log1.txt";
             IRepository repo = new Repository(filePath1);
-            PrgState prg1 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[0], new MyDictionary<>());
+            PrgState prg1 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[0], new MyDictionary<>(), new MyHeap<>());
             repo.addPrgState(prg1);
             Controller controller = new Controller(repo);
 
             String filePath2 = "log2.txt";
             IRepository repo2 = new Repository(filePath2);
-            PrgState prg2 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[1], new MyDictionary<>());
+            PrgState prg2 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[1], new MyDictionary<>(), new MyHeap<>());
             repo2.addPrgState(prg2);
             Controller controller2 = new Controller(repo2);
 
             String filePath3 = "log3.txt";
             IRepository repo3 = new Repository(filePath3);
-            PrgState prg3 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[2], new MyDictionary<>());
+            PrgState prg3 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[2], new MyDictionary<>(), new MyHeap<>());
             repo3.addPrgState(prg3);
             Controller controller3 = new Controller(repo3);
 
             String filePath4 = "log4.txt";
             IRepository repo4 = new Repository(filePath4);
-            PrgState prg4 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[3], new MyDictionary<>());
+            PrgState prg4 = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), ex[3], new MyDictionary<>(), new MyHeap<>());
             repo4.addPrgState(prg4);
             Controller controller4 = new Controller(repo4);
 

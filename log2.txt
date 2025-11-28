@@ -134,3 +134,155 @@ ProgramState:
 ~ out= [18]
 
 
+ProgramState: 
+~ exeStack= [(int a (int b (a=2+3*5 (b=a+1 print(b)))))]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int b (a=2+3*5 (b=a+1 print(b)))), int a]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int b (a=2+3*5 (b=a+1 print(b)))), int a]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int b (a=2+3*5 (b=a+1 print(b))))]
+~ symTable= {a=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(int b (a=2+3*5 (b=a+1 print(b))))]
+~ symTable= {a=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=2+3*5 (b=a+1 print(b))), int b]
+~ symTable= {a=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=2+3*5 (b=a+1 print(b))), int b]
+~ symTable= {a=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=2+3*5 (b=a+1 print(b)))]
+~ symTable= {a=0, b=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(a=2+3*5 (b=a+1 print(b)))]
+~ symTable= {a=0, b=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(b=a+1 print(b)), a=2+3*5]
+~ symTable= {a=0, b=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(b=a+1 print(b)), a=2+3*5]
+~ symTable= {a=0, b=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(b=a+1 print(b))]
+~ symTable= {a=17, b=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [(b=a+1 print(b))]
+~ symTable= {a=17, b=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(b), b=a+1]
+~ symTable= {a=17, b=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(b), b=a+1]
+~ symTable= {a=17, b=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(b)]
+~ symTable= {a=17, b=18}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= [print(b)]
+~ symTable= {a=17, b=18}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {a=17, b=18}
+~ fileTable= {}
+~ Heap= {}
+~ out= [18]
+
+
+ProgramState: 
+~ exeStack= []
+~ symTable= {a=17, b=18}
+~ fileTable= {}
+~ Heap= {}
+~ out= [18]
+
+

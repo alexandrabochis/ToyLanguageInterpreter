@@ -3,10 +3,7 @@ package view;
 import com.sun.tools.jconsole.JConsoleContext;
 import controller.Controller;
 import model.PrgState;
-import model.adt.MyDictionary;
-import model.adt.MyIList;
-import model.adt.MyList;
-import model.adt.MyStack;
+import model.adt.*;
 import model.statements.IStmt;
 import model.values.Value;
 
@@ -39,7 +36,7 @@ public class UI {
     }
 
     public void loadProgram(IStmt statement){
-        PrgState program = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), statement, new MyDictionary<>());
+        PrgState program = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), statement, new MyDictionary<>(), new MyHeap<>());
         this.controller.add(program);
     }
 

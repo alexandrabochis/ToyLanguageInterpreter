@@ -32,7 +32,7 @@ public class MyStack <T> implements MyIStack<T> {
             return this.stack.peek();
         }
         catch(Exception e){
-            throw new ADTException("Error popping from stack");
+            throw new ADTException("Error popping from stack--at peek");
         }
     }
 

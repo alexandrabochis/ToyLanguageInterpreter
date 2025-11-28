@@ -38,7 +38,7 @@ public class AssignStmt implements IStmt{
             throw new StatementException("var not declared before");
         }
 
-        state.setSymTable(symTable);
+        //state.setSymTable(symTable);
         return state;
     }
 

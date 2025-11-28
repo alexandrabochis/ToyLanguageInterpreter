@@ -38,17 +38,13 @@ public class Repository implements IRepository{
 
     @Override
     public void logPrgStateExec(PrgState prgState) throws GeneralException {
-        PrintWriter logFile;
-        try{
-            logFile= new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
+       // PrintWriter logFile;
+        try(PrintWriter logFile = new PrintWriter((new BufferedWriter(new FileWriter(logFilePath, true))))){
+            logFile.println(prgState.toString());
         }
         catch(Exception e){
             throw new FileException(e.getMessage());
         }
-        logFile.println(prgState.toString());
-        logFile.flush();
-        if(prgState.getExeStack().isEmpty()){
-            logFile.close();
-        }
+
     }
 }

@@ -25,7 +25,7 @@ public class VarDecStmt implements IStmt {
         else{
             symTable.add(name, type.getDefault());
         }
-        state.setSymTable(symTable);
+        //state.setSymTable(symTable);
         return state;
     }
 

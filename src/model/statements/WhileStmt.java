@@ -30,7 +30,7 @@ public class WhileStmt implements IStmt {
             stack.push(new WhileStmt(expression,stmt));
             stack.push(stmt);
         }
-        state.setExeStack(stack);
+        //state.setExeStack(stack);
         return state;
     }
 

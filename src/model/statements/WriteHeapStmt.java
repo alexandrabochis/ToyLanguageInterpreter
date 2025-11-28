@@ -38,8 +38,8 @@ public class WriteHeapStmt implements IStmt{
             throw new StatementException("exp and var name have different types");
 
         heap.put(refAddr, valExp);
-        state.setSymTable(symTable);
-        state.setHeap(heap);
+        //state.setSymTable(symTable);
+        //state.setHeap(heap);
         return state;
 
     }
