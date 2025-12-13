@@ -1,11 +1,9 @@
 package view;
 
+import model.adt.MyIDictionary;
 import model.expressions.*;
 import model.statements.*;
-import model.types.BoolType;
-import model.types.IntType;
-import model.types.RefType;
-import model.types.StringType;
+import model.types.*;
 import model.values.BoolValue;
 import model.values.IntValue;
 import model.values.StringValue;
@@ -154,7 +152,35 @@ public class Examples {
             )
     );
 
+    IStmt ex10 = new CompStmt(
+            new VarDecStmt("v", new IntType()),
+            new CompStmt(
+                    new VarDecStmt("a", new RefType(new IntType())),
+                    new CompStmt(
+                            new AssignStmt("v",  new ValueExp(new IntValue(10))),
+                            new CompStmt(
+                            new HeapAllocStmt("a", new ValueExp(new IntValue(22))),
+                            new CompStmt(
+                                    new ForkStmt(new CompStmt(
+                                            new WriteHeapStmt("a", new ValueExp(new IntValue(30))),
+                                            new CompStmt(
+                                                    new AssignStmt("v", new ValueExp(new IntValue(32))),
+                                                    new CompStmt(
+                                                            new PrintStmt(new VarExp("v")),
+                                                                    new PrintStmt(new ReadHeapExp(new VarExp("a")))
+
+                                                    )
+                                            )
+                                    )),
+                                    new CompStmt(
+                                            new PrintStmt(new VarExp("v")),
+                                            new PrintStmt(new ReadHeapExp(new VarExp("a"))))
+                            ))
+                    )
+            )
+    );
+
     public IStmt[] getExamples(){
-        return new IStmt[]{ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8,ex9};
+        return new IStmt[]{ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8,ex9, ex10};
     }
 }

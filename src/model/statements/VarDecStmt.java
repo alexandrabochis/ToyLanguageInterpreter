@@ -26,12 +26,18 @@ public class VarDecStmt implements IStmt {
             symTable.add(name, type.getDefault());
         }
         //state.setSymTable(symTable);
-        return state;
+        return null;
     }
 
     @Override
     public IStmt deepCopy() {
         return new  VarDecStmt(name, type);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        typeEnv.add(name, type);
+        return typeEnv;
     }
 
     @Override

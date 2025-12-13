@@ -39,12 +39,21 @@ public class AssignStmt implements IStmt{
         }
 
         //state.setSymTable(symTable);
-        return state;
+        return null;
     }
 
     @Override
     public IStmt deepCopy() {
         return new  AssignStmt(id, expression);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        Type typevar = typeEnv.search(id);
+        Type typeexp = expression.typecheck(typeEnv);
+        if(typevar.equals(typeexp))
+            return typeEnv;
+        else throw new StatementException("Assignment: rhs and lhs have different types");
     }
 
     @Override

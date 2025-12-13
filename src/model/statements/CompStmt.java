@@ -1,8 +1,11 @@
 package model.statements;
 
+import exceptions.GeneralException;
 import exceptions.StatementException;
 import model.PrgState;
+import model.adt.MyIDictionary;
 import model.adt.MyIStack;
+import model.types.Type;
 
 public class CompStmt implements IStmt{
 
@@ -23,11 +26,16 @@ public class CompStmt implements IStmt{
         MyIStack<IStmt> stk = state.getExeStack();
         stk.push(second);
         stk.push(first);
-        return state;
+        return null;
     }
 
     @Override
     public IStmt deepCopy() {
         return new CompStmt(first, second);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        return second.typecheck(first.typecheck(typeEnv));
     }
 }

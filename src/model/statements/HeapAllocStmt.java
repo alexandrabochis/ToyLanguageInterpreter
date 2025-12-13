@@ -8,6 +8,7 @@ import model.adt.MyIHeap;
 import model.adt.MyIList;
 import model.expressions.Expression;
 import model.types.RefType;
+import model.types.Type;
 import model.values.RefValue;
 import model.values.Value;
 
@@ -38,12 +39,22 @@ public class HeapAllocStmt implements IStmt{
 
         //state.setHeap(heap);
         //state.setSymTable(symTbl);
-        return state;
+        return null;
     }
 
     @Override
     public IStmt deepCopy() {
         return new HeapAllocStmt(this.name, this.exp);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        Type typevar = typeEnv.search(this.name);
+        Type typexp = exp.typecheck(typeEnv);
+        if(typevar.equals(new RefType(typexp)))
+            return typeEnv;
+        else throw new StatementException("NEW stamt: rhs and lhs have different types");
+
     }
 
     @Override

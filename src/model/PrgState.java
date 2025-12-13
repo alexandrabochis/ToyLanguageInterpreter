@@ -1,5 +1,7 @@
 package model;
 
+import exceptions.ADTException;
+import exceptions.GeneralException;
 import model.adt.*;
 import model.statements.IStmt;
 import model.values.StringValue;
@@ -14,6 +16,7 @@ public class PrgState {
     MyIDictionary<StringValue, BufferedReader> fileTable;
     MyIHeap<Value> heap;
     IStmt originalProgram; //optional
+    static int id;
 
 //    public PrgState(MyIStack<IStmt> estk, MyIDictionary<String, Value> symtbl, MyIList<Value> o) {
 //        this.exeStack = estk;
@@ -29,7 +32,7 @@ public class PrgState {
 //        this.heap = heap;
 //    }
 
-    public PrgState(MyIStack<IStmt> estk, MyIDictionary<String, Value> symtbl, MyIList<Value> o, IStmt ogPrg, MyIDictionary<StringValue, BufferedReader> ftbl, MyIHeap<Value> heap){
+    public PrgState(MyIStack<IStmt> estk, MyIDictionary<String, Value> symtbl, MyIList<Value> o, IStmt ogPrg, MyIDictionary<StringValue, BufferedReader> ftbl, MyIHeap<Value> heap, int threadId){
         this.exeStack = estk;
         this.symTable = symtbl;
         this.out = o;
@@ -37,9 +40,17 @@ public class PrgState {
         this.fileTable = ftbl;
         this.heap = heap;
         this.exeStack.push(this.originalProgram);
+        setId(threadId);
+        //this.id = threadId;
     }
 
+    public int getId() {
+        return id;
+    }
 
+    private static synchronized void setId(int theId){
+        PrgState.id = theId;
+    }
 
     public void setExeStack(MyIStack<IStmt> exeStack) {
         this.exeStack = exeStack;
@@ -88,9 +99,23 @@ public class PrgState {
         this.fileTable = fileTable;
     }
 
+    public boolean isNotCompleted(){
+        return !this.exeStack.isEmpty();
+    }
+
+    public  PrgState oneStep() throws GeneralException {
+        if(exeStack.isEmpty()){
+            throw new ADTException("Stack is empty");
+        }else{
+            IStmt current = exeStack.pop();
+            return current.execute(this);
+        }
+    }
+
     @Override
     public String toString(){
         return "ProgramState: \n" +
+                "~ID: " + id + "\n" +
                 "~ exeStack= " + exeStack.toString() + "\n"+
                 "~ symTable= " + symTable.toString() + "\n"+
                 "~ fileTable= " + fileTable.toString() + "\n"+

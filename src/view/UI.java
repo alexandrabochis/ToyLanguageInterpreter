@@ -36,7 +36,7 @@ public class UI {
     }
 
     public void loadProgram(IStmt statement){
-        PrgState program = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), statement, new MyDictionary<>(), new MyHeap<>());
+        PrgState program = new PrgState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), statement, new MyDictionary<>(), new MyHeap<>(), -1);
         this.controller.add(program);
     }
 

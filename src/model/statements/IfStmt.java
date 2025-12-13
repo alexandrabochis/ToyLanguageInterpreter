@@ -9,6 +9,7 @@ import model.adt.MyIDictionary;
 import model.adt.MyIStack;
 import model.expressions.Expression;
 import model.types.BoolType;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.Value;
 
@@ -38,12 +39,23 @@ public class IfStmt implements IStmt {
         }
 
         //state.setExeStack(stack);
-        return state;
+        return null;
     }
 
     @Override
     public IStmt deepCopy() {
         return  new IfStmt(expression, thenStmt, elseStmt);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        Type typeexp = expression.typecheck(typeEnv);
+        if(typeexp.equals(new BoolType())){
+            thenStmt.typecheck(typeEnv.deepCopy());
+            elseStmt.typecheck(typeEnv.deepCopy());
+            return typeEnv;
+        }
+        else throw new StatementException("IF condition not boolean");
     }
 
     @Override

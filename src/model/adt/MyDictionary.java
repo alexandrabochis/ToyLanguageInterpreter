@@ -56,6 +56,14 @@ public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
     }
 
     @Override
+    public MyIDictionary<T1, T2> deepCopy() {
+        MyDictionary<T1, T2> clone = new MyDictionary<>();
+        for(T1 key : map.keySet())
+            clone.map.put(key, map.get(key));
+        return clone;
+    }
+
+    @Override
     public String toString(){
         return this.map.toString();
     }

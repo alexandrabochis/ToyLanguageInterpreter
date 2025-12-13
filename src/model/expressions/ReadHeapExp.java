@@ -4,6 +4,8 @@ import exceptions.ExpressionException;
 import exceptions.GeneralException;
 import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
+import model.types.RefType;
+import model.types.Type;
 import model.values.RefValue;
 import model.values.Value;
 
@@ -32,6 +34,16 @@ public class ReadHeapExp implements Expression {
     @Override
     public Expression deepCopy() {
         return new ReadHeapExp(this.exp);
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        Type t = exp.typecheck(typeEnv);
+        if(t instanceof RefType){
+            RefType ref = (RefType)t;
+            return ref.getInner();
+        }
+        else throw new ExpressionException("the rH argument is not a Ref type");
     }
 
     public String toString(){

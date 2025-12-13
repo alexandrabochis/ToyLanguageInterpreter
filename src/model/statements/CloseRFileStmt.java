@@ -8,6 +8,7 @@ import model.adt.MyIDictionary;
 import model.expressions.Expression;
 import model.types.IntType;
 import model.types.StringType;
+import model.types.Type;
 import model.values.IntValue;
 import model.values.StringValue;
 import model.values.Value;
@@ -52,12 +53,20 @@ public class CloseRFileStmt implements IStmt{
         }
         else throw new StatementException("Invalid expression");
 
-        return state;
+        return null;
     }
 
     @Override
     public IStmt deepCopy() {
         return new  CloseRFileStmt(exp);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        Type t = exp.typecheck(typeEnv);
+        if(t.equals(new StringType()))
+            return typeEnv;
+        else throw new StatementException("CloseRFileStmt exp not of type string");
     }
 
 }

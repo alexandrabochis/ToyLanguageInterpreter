@@ -7,6 +7,7 @@ import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
 import model.types.BoolType;
 import model.types.IntType;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.IntValue;
 import model.values.Value;
@@ -52,6 +53,18 @@ public class LogicExp implements  Expression {
     @Override
     public Expression deepCopy() {
         return new LogicExp(this.e1, this.e2, this.op);
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        Type t1 = e1.typecheck(typeEnv);
+        Type t2 = e2.typecheck(typeEnv);
+        if(t1.equals(new BoolType())){
+            if (t2.equals(new BoolType()))
+                return new BoolType();
+            else throw new ExpressionException("logic exp: second operand is not boolean");
+        }
+        else throw new ExpressionException("logic exp: first operand is not boolean");
     }
 
     @Override

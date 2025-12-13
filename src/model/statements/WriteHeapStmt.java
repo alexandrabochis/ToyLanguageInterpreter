@@ -8,6 +8,7 @@ import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
 import model.expressions.Expression;
 import model.types.RefType;
+import model.types.Type;
 import model.values.RefValue;
 import model.values.Value;
 
@@ -40,13 +41,25 @@ public class WriteHeapStmt implements IStmt{
         heap.put(refAddr, valExp);
         //state.setSymTable(symTable);
         //state.setHeap(heap);
-        return state;
+        return null;
 
     }
 
     @Override
     public IStmt deepCopy() {
         return new  WriteHeapStmt(name, expression);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        Type typevar = typeEnv.search(this.name);
+        Type typeexp = expression.typecheck(typeEnv);
+        if(typevar.equals(new RefType(typeexp))){
+            if(typeexp.equals(((RefType)typevar).getInner()))
+                return typeEnv;
+            else throw new StatementException("Write heap: exp not of correct type");
+        }
+        else throw new StatementException("Write heap: variable is not of Ref type");
     }
 
     public String toString(){

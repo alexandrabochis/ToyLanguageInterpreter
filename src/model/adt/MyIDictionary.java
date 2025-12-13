@@ -15,4 +15,6 @@ public interface MyIDictionary <T1,T2>{
     Collection<T2> values();
 
     Map<T1,T2> getDictionary();
+
+    public MyIDictionary<T1, T2> deepCopy();
 }

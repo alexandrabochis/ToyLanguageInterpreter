@@ -7,6 +7,7 @@ import model.PrgState;
 import model.adt.MyIDictionary;
 import model.expressions.Expression;
 import model.types.StringType;
+import model.types.Type;
 import model.values.StringValue;
 import model.values.Value;
 
@@ -42,12 +43,20 @@ public class OpenRFileStmt implements IStmt {
         }
 
         //state.setFileTable(fileTable);
-        return state;
+        return null;
     }
 
     @Override
     public IStmt deepCopy() {
         return new OpenRFileStmt(exp);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        Type t = exp.typecheck(typeEnv);
+        if(t.equals(new StringType()))
+            return typeEnv;
+        else throw new StatementException("OpenRFileStmt exp not of type string");
     }
 
     @Override

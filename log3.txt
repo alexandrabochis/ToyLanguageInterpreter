@@ -453,3 +453,219 @@ ProgramState:
 ~ out= [2]
 
 
+ProgramState: 
+~ID: 3
+~ exeStack= [(bool a (int v (a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v)))))]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [(int v (a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v)))), bool a]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [(int v (a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v)))), bool a]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [(int v (a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v)))), bool a]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [(int v (a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v)))), bool a]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [(a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v))), int v]
+~ symTable= {a=false}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [(a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v))), int v]
+~ symTable= {a=false}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [(a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v))), int v]
+~ symTable= {a=false}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [(a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v))), int v]
+~ symTable= {a=false}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [(a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v))), int v]
+~ symTable= {a=false}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [(a=true ((IF(a) THEN(v=2) ELSE(v=3)) print(v))), int v]
+~ symTable= {a=false}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v))]
+~ symTable= {a=true, v=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v))]
+~ symTable= {a=true, v=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v))]
+~ symTable= {a=true, v=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v))]
+~ symTable= {a=true, v=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v))]
+~ symTable= {a=true, v=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v))]
+~ symTable= {a=true, v=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v))]
+~ symTable= {a=true, v=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= [((IF(a) THEN(v=2) ELSE(v=3)) print(v))]
+~ symTable= {a=true, v=0}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= []
+~ symTable= {a=true, v=2}
+~ fileTable= {}
+~ Heap= {}
+~ out= [2]
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= []
+~ symTable= {a=true, v=2}
+~ fileTable= {}
+~ Heap= {}
+~ out= [2]
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= []
+~ symTable= {a=true, v=2}
+~ fileTable= {}
+~ Heap= {}
+~ out= [2]
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= []
+~ symTable= {a=true, v=2}
+~ fileTable= {}
+~ Heap= {}
+~ out= [2]
+
+
+ProgramState: 
+~ID: 3
+~ exeStack= []
+~ symTable= {a=true, v=2}
+~ fileTable= {}
+~ Heap= {}
+~ out= [2]
+
+

@@ -1,8 +1,10 @@
 package model.expressions;
 
 import exceptions.ExpressionException;
+import exceptions.GeneralException;
 import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
+import model.types.Type;
 import model.values.Value;
 
 public class ValueExp implements Expression {
@@ -20,6 +22,11 @@ public class ValueExp implements Expression {
     @Override
     public Expression deepCopy() {
         return new  ValueExp(expression);
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        return expression.getType();
     }
 
     @Override

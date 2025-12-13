@@ -4,7 +4,9 @@ import exceptions.ExpressionException;
 import exceptions.GeneralException;
 import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
+import model.types.BoolType;
 import model.types.IntType;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.IntValue;
 import model.values.Value;
@@ -41,7 +43,7 @@ public class RelExp implements Expression {
                     case "<" -> {return new BoolValue(n1<n2);}
                     case "<=" -> {return new BoolValue(n1<=n2);}
                     case ">" -> {return new BoolValue(n1>n2);}
-                    case ">=" -> {return new BoolValue(n1>n2);}
+                    case ">=" -> {return new BoolValue(n1>=n2);}
                     case "==" -> {return new BoolValue(n1==n2);}
                     case "!=" -> {return new BoolValue(n1!=n2);}
 
@@ -49,13 +51,27 @@ public class RelExp implements Expression {
 
                 }
             }
-            else throw new ExpressionException("second operand is not int");
-        }else throw new ExpressionException("first operand is not int");
+            else throw new ExpressionException("REL  exp: second operand is not int");
+        }else throw new ExpressionException("REL exp: first operand is not int");
     }
 
     @Override
     public Expression deepCopy() {
         return new RelExp(this.exp1, this.exp2, this.op);
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        //System.out.println("type checking rel expression");
+        Type t1 = exp1.typecheck(typeEnv);
+        Type t2 = exp2.typecheck(typeEnv);
+        if(t1.equals(new IntType())){
+            if (t2.equals(new IntType())){
+                //System.out.println("type checking rel expression --- OK");
+                return new BoolType();}
+            else throw new ExpressionException("REL ex second operand is not int");
+        }
+        else throw new ExpressionException("REL ex first operand is not int");
     }
 
 }

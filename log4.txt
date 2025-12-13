@@ -684,3 +684,525 @@ ProgramState:
 ~ out= [15, 50]
 
 
+ProgramState: 
+~ID: 4
+~ exeStack= [(string varf (varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))))]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(varf=test.in (open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf)))))))), string varf]
+~ symTable= {}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(open(varf) (int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))), varf=test.in]
+~ symTable= {varf=Default String}
+~ fileTable= {}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(int varc (varf varc (print(varc) (varf varc (print(varc) closed(varf))))))]
+~ symTable= {varf=test.in}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [(print(varc) (varf varc (print(varc) closed(varf))))]
+~ symTable= {varf=test.in, varc=15}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= []
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= [closed(varf)]
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {test.in=java.io.BufferedReader@179d3b25}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= []
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= []
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= []
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= []
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= []
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= []
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= []
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= []
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {}
+~ Heap= {}
+~ out= [15, 50]
+
+
+ProgramState: 
+~ID: 4
+~ exeStack= []
+~ symTable= {varf=test.in, varc=50}
+~ fileTable= {}
+~ Heap= {}
+~ out= [15, 50]
+
+

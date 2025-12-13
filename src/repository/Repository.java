@@ -7,10 +7,12 @@ import model.PrgState;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Repository implements IRepository{
-    private LinkedList<PrgState> prgStates;
+    private List<PrgState> prgStates;
     String logFilePath;
 
     public Repository(String filePath) throws FileException {
@@ -20,16 +22,16 @@ public class Repository implements IRepository{
         catch (Exception e){
             throw new FileException(e.getMessage());
         }
-        this.prgStates = new LinkedList<>();
+        this.prgStates = new ArrayList<>();
         this.logFilePath = filePath;
     }
 
-    @Override
-    public PrgState getCurrentPrgState() {
-        PrgState current = this.prgStates.getFirst();
-        this.prgStates.removeFirst();
-        return current;
-    }
+//    @Override
+//    public PrgState getCurrentPrgState() {
+//        PrgState current = this.prgStates.getFirst();
+//        this.prgStates.removeFirst();
+//        return current;
+//    }
 
     @Override
     public void addPrgState(PrgState prgState) {
@@ -46,5 +48,15 @@ public class Repository implements IRepository{
             throw new FileException(e.getMessage());
         }
 
+    }
+
+    @Override
+    public List<PrgState> getProgramList() {
+        return this.prgStates;
+    }
+
+    @Override
+    public void setProgramList(List<PrgState> programList) {
+        this.prgStates = programList;
     }
 }

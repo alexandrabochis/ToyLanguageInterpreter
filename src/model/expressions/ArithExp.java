@@ -8,6 +8,7 @@ import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
 import model.types.BoolType;
 import model.types.IntType;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.IntValue;
 import model.values.Value;
@@ -68,6 +69,19 @@ public class ArithExp implements Expression {
             case 4 ->  newOp= '/';
         }
         return new ArithExp(newOp, e1, e2);
+
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        Type t1 = e1.typecheck(typeEnv);
+        Type t2 = e2.typecheck(typeEnv);
+        if(t1.equals(new IntType())){
+            if (t2.equals(new IntType()))
+                return new IntType();
+            else throw new ExpressionException("second operand is not an integer");
+        }
+        else throw new ExpressionException("first operand is not an integer");
 
     }
 

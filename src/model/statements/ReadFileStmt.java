@@ -9,6 +9,7 @@ import model.adt.MyIDictionary;
 import model.expressions.Expression;
 import model.types.IntType;
 import model.types.StringType;
+import model.types.Type;
 import model.values.IntValue;
 import model.values.StringValue;
 import model.values.Value;
@@ -61,12 +62,20 @@ public class ReadFileStmt implements IStmt {
         }
         else throw new StatementException("Expression's string value is defined");
 
-        return state;
+        return null;
     }
 
     @Override
     public IStmt deepCopy() {
         return new ReadFileStmt(exp, varName);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws GeneralException {
+        Type t = exp.typecheck(typeEnv);
+        if(t.equals(new StringType()))
+            return typeEnv;
+        else throw new StatementException("ReadFileStmt exp not of type string");
     }
 
 }
